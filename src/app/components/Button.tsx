@@ -29,9 +29,11 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     elevation: 3,
+    minWidth: 45,
   },
   floattingText: {
     fontSize: 20,
     color: '#fff',
+    textAlign: 'center',
   },
 });
