@@ -11,7 +11,10 @@ export default function Button({
 }) {
   return (
     <Pressable
-      style={styles.floattingButton}
+      style={({ pressed }) => [
+        styles.floattingButton,
+        pressed ? { opacity: 0.7 } : { opacity: 1 },
+      ]}
       onPress={onPress}
       onLongPress={onLongPress}
     >
